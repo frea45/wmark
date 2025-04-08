@@ -2,13 +2,14 @@
 import os
 import ffmpeg
 from pyrogram import Client, filters
+from config import Config 
 
-api_id = 3335796
-api_hash = "138b992a0e672e8346d8439c3f42ea78 "
-bot_token = "7136875110:AAFzyr2i2FbRrmst1sklkJPN7Yz2rXJvSew"
-
-app = Client("watermark_bot", api_id=api_id, api_hash=api_hash, bot_token=bot_token)
-
+app = Client(
+    "watermark_bot",
+    api_id=Config.API_ID,
+    api_hash=Config.API_HASH,
+    bot_token=Config.BOT_TOKEN
+)
 
 @app.on_message(filters.command("start"))
 async def start(client, message):
