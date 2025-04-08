@@ -3,9 +3,9 @@ import os
 import ffmpeg
 from pyrogram import Client, filters
 
-api_id = int(os.getenv("API_ID", 3335796 ))
-api_hash = os.getenv("API_HASH", "138b992a0e672e8346d8439c3f42ea78 ")
-bot_token = os.getenv("BOT_TOKEN", "7136875110:AAFzyr2i2FbRrmst1sklkJPN7Yz2rXJvSew")
+api_id = 3335796
+api_hash = "138b992a0e672e8346d8439c3f42ea78 "
+bot_token = "7136875110:AAFzyr2i2FbRrmst1sklkJPN7Yz2rXJvSew"
 
 app = Client("watermark_bot", api_id=api_id, api_hash=api_hash, bot_token=bot_token)
 
