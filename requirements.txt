@@ -1,3 +1,7 @@
 pyrogram
 tgcrypto
 moviepy
+imageio
+imageio-ffmpeg
+Pillow
+numpy
